@@ -27,3 +27,11 @@ a=5;
 b=16;
 calculateGmean(a,b);
 isGreater(a,b);
+
+def Avg(*numbers):
+  sum=0;
+  for i in numbers:
+    sum=sum+i;
+  print("Average is:",sum/len(numbers));
+
+Avg(a,6,9,8,24);
