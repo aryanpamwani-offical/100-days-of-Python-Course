@@ -1,13 +1,35 @@
 
-# Creating Lists
+# fStrings
 
-lst1 = [1,2,2,3,5,4,6]
-lst2 = ["Red", "Green", "Blue"]
-print(lst1)
-print(lst2)
+letter="Hey my name is {1} and I live in {0}";
+country="India";
+name="Aryan"
+print(letter.format(country,name));
+print(f"Hey my name is {name} and I live in {country}");
 
-colors = ["Red", "Green", "Blue", "Yellow", "Green"]
-if "Red" in colors:
-    print("Yellow is present.")
-else:
-    print("Yellow is absent.")
+price = 49.09999
+txt = f"For only {price:.2f} dollars!"
+print(txt)
+print(f"{2 * 30}")
+
+
+# DocStrings
+
+def square(n):
+  '''Takes in a number n, returns the square of n'''
+  print(n**2)
+square(5)
+print(square.__doc__)
+
+# Recursion
+def factorial(n):
+  if(n==0 or n==1):
+    return 1;
+  else:
+    return n*factorial(n-1);
+print(factorial(7))
+
+# Sets
+
+s={2,2,4,5,7,4,2}
+print(s) 
